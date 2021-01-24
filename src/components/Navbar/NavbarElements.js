@@ -7,7 +7,7 @@ export const Nav = styled.nav`
 background:red;
 display:flex;
 justify-content:center;
-height:80px;
+height:180px;
 font-weight:700;
 `;
 

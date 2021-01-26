@@ -14,7 +14,7 @@ function App() {
     <Hero />
     <Products heading='Choose your favorite' data={productData}/>
     <Feature />
-    {/* <Products heading='Sweet Treates for You' data={productDataTwo}/> */}
+    <Products heading='Sweet Treates for You' data={productDataTwo}/>
     </Router>
   );
 }

@@ -2,17 +2,17 @@ import React from 'react'
 import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa'
 import {FooterContainer, FooterWrap,
     SocialIcons, SocialLink, 
-    SocailMedia, SocialMediaWrap, SocailLogo}
-    from './FooterElementsFooter'
+    SocialMedia, SocialMediaWrap, SocialLogo}
+    from './FooterElements'
 
 
 export const Footer = () => {
     return (
         <FooterContainer>
             <FooterWrap>
-                <SocailMedia>
+                <SocialMedia>
                     <SocialMediaWrap>
-                        <SocailLogo to="/">Pizza</SocailLogo>
+                        <SocialLogo to="/">Pizza</SocialLogo>
                         <SocialIcons>
                             <SocialLink href="/" target="_blank"aria-label="Linkedin">
                                 <FaLinkedin />
@@ -25,7 +25,7 @@ export const Footer = () => {
                             </SocialLink>
                         </SocialIcons>
                     </SocialMediaWrap>
-                </SocailMedia>
+                </SocialMedia>
             </FooterWrap>
         </FooterContainer>
     )

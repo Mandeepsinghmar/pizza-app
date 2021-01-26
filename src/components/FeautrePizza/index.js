@@ -1,7 +1,7 @@
 import react from 'react';
 import { FeatureContainer, FeatureButton} from './FeatureElements';
 
-export const Feature = () => {
+export const FeaturePizza = () => {
     return(
     <FeatureContainer>
         <h1>Pizza of the Day</h1>

@@ -37,11 +37,11 @@ export const SocialLogo = styled(Link)`
   justify-self: start;
   cursor: pointer;
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   display: flex;
   align-items: center;
   margin-bottom: 16px;
-  font-weight: bold;
+//   font-weight: bold;
 `;
 
 export const SocialIcons = styled.div`

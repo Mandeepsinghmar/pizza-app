@@ -1,7 +1,7 @@
 
 import styled from 'styled-components';
 import { NavLink as Link } from 'react-router-dom';
-import { FaPizzaSlice } from 'react-icons/fa'
+import { IoFastFood } from 'react-icons/io5'
 
 export const Nav = styled.nav`
 background:transparent;
@@ -40,7 +40,7 @@ p{
 `;
     
 
-export const Bars = styled(FaPizzaSlice)`
+export const Bars = styled(IoFastFood)`
 transform:translate(-50%, -10%);
 font-size:2rem;
 `;

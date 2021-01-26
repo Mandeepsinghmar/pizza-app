@@ -6,7 +6,7 @@ import { Nav, NavLink, NavIcon, Bars } from './NavbarElements';
     return (
        <Router>
             <Nav>
-                <NavLink to="/">Pizza</NavLink>
+                <NavLink to="/">Subway🥂</NavLink>
                 <NavIcon onClick={toggle}>
                 <p>Menu</p>
                 <Bars />

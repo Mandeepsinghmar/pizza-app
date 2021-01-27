@@ -12,15 +12,15 @@ export const Footer = () => {
             <FooterWrap>
                 <SocialMedia>
                     <SocialMediaWrap>
-                        <SocialLogo to="/">Pizza</SocialLogo>
+                        <SocialLogo to="https://mandeepsinghmar.netlify.app/">Mandeep Singhmar</SocialLogo>
                         <SocialIcons>
-                            <SocialLink href="/" target="_blank"aria-label="Linkedin">
+                            <SocialLink href="https://www.linkedin.com/in/mandeep-singhmar-7b222117a/" target="_blank"aria-label="Linkedin">
                                 <FaLinkedin />
                             </SocialLink>
-                            <SocialLink href="/" target="_blank"aria-label="Linkedin">
+                            <SocialLink href="https://github.com/Mandeepsinghmar/pizza-app" target="_blank"aria-label="Linkedin">
                                 <FaGithub />
                             </SocialLink>
-                            <SocialLink href="/" target="_blank"aria-label="Linkedin">
+                            <SocialLink href="https://twitter.com/mandeep_singh_9" target="_blank"aria-label="Linkedin">
                                 <FaTwitter />
                             </SocialLink>
                         </SocialIcons>

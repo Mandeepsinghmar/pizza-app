@@ -1,17 +1,50 @@
-import React from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
-import { Nav, NavLink, NavIcon, Bars } from './NavbarElements';
+import React, { useState } from "react";
 
- export const Navbar = ({toggle}) => {
-    return (
-       <Router>
-            <Nav>
-                <NavLink to="/">Subway🥂</NavLink>
-                <NavIcon onClick={toggle}>
-                <p>Menu</p>
-                <Bars />
-                </NavIcon>
-            </Nav>
-      </Router>
-    )
-}
+import { Link } from "react-router-dom";
+import { Sidebar } from "../Sidebar";
+import {
+  Nav,
+  NavLink,
+  NavIcon,
+  Bars,
+  Cart,
+  Products,
+  Home,
+} from "./NavbarElements";
+
+export const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggle = () => {
+    setIsOpen(!isOpen);
+  };
+
+  return (
+    <Nav>
+      <NavLink to="/">
+        Subway<span style={{ fontSize: "1.4rem" }}>🍕</span>
+      </NavLink>
+      <NavIcon>
+        <Link to="/">
+          {" "}
+          <Home />
+        </Link>
+        <Link to="/products">
+          {" "}
+          <Products />
+        </Link>
+        <Link to="/cart">
+          {" "}
+          <Cart />
+        </Link>
+
+        <Bars onClick={toggle} />
+      </NavIcon>
+      <Sidebar
+        isOpen={isOpen}
+        toggle={toggle}
+        style={{ fontWeight: "400 !important" }}
+      />
+    </Nav>
+  );
+};

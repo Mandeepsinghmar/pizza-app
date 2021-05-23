@@ -1,12 +1,15 @@
-import react from 'react';
-import { FeatureContainer, FeatureButton} from './FeatureElements';
+import react from "react";
+import { Link } from "react-router-dom";
+import { FeatureContainer, FeatureButton } from "./FeatureElements";
 
 export const FeaturePizza = () => {
-    return(
+  return (
     <FeatureContainer>
-        <h1>Pizza of the Day</h1>
-        <p>Truffle alfredo sauce topped with 24 carat gold dust.</p>
+      <h1>Pizza of the Day</h1>
+      <p>Truffle alfredo sauce topped with 24 carat gold dust.</p>
+      <Link to="/product-details/28">
         <FeatureButton>Order Now</FeatureButton>
+      </Link>
     </FeatureContainer>
-    )
-}
+  );
+};

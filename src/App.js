@@ -9,6 +9,7 @@ import store from "./store";
 import Products from "./components/Products/allProducts";
 import { productData } from "./components/Products/data";
 import ProductDetails from "./components/ProductDetails/index";
+import ProductsCart from "./components/ProductsCart";
 
 function App() {
   return (
@@ -24,7 +25,7 @@ function App() {
             <Products heading="Choose your favourites" data={productData} />
           </Route>
           <Route path="/cart">
-            <Footer />
+            <ProductsCart />
           </Route>
           <Route path="/product-details/:id">
             <ProductDetails />

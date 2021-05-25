@@ -41,9 +41,25 @@ export const Cart = styled(AiFillShopping)`
   font-size: 2rem;
   color: #000;
   cursor: pointer;
+`;
+
+export const ProductQuantities = styled.span`
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 173px;
+  right: 17px;
+  width: 15px;
+  height: 15px;
+
+  border-radius: 50%;
+
+  font-size: 17px;
+  color: #e31837;
 
   &:hover {
-    color: #e31837 !important;
+    color: silver !important;
   }
 `;
 

@@ -52,7 +52,7 @@ export const Products = ({ data, heading }) => {
                     <span
                       style={{
                         marginLeft: "6px",
-                        fontSize: "0.9rem",
+                        fontSize: "0.8rem",
                         fontWeight: "300",
                         color: "silver",
                       }}

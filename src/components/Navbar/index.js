@@ -10,9 +10,12 @@ import {
   Cart,
   Products,
   Home,
+  ProductQuantities,
 } from "./NavbarElements";
+import { useSelector } from "react-redux";
 
 export const Navbar = () => {
+  const { totalQuantities } = useSelector((state) => state.CartReducer);
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => {
@@ -36,6 +39,7 @@ export const Navbar = () => {
         <Link to="/cart">
           {" "}
           <Cart />
+          <ProductQuantities>{totalQuantities}</ProductQuantities>
         </Link>
 
         <Bars onClick={toggle} />

@@ -52,7 +52,10 @@ export const ProductsHeading = styled.h1`
 
 export const ProductTitle = styled.h2`
   font-weight: 400;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
+  @media screen and (max-width: 600px) {
+    font-size: 1.3rem;
+  }
 `;
 export const AllProductTitle = styled.h2`
   font-weight: 400;
@@ -74,19 +77,25 @@ export const ProductDesc = styled.p`
 
 export const ProductPrice = styled.p`
   margin-bottom: 1rem;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
+  @media screen and (max-width: 600px) {
+    font-size: 1rem;
+  }
 `;
 export const AllProductPrice = styled.p`
   margin-bottom: 1rem;
-  font-size: 1.3rem;
+  font-size: 0.9rem;
 `;
 export const ProductDiscountPrice = styled.p`
   margin-bottom: 1rem;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
+  @media screen and (max-width: 600px) {
+    font-size: 1rem;
+  }
 `;
 export const AllProductDiscountPrice = styled.p`
   margin-bottom: 1rem;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
 `;
 
 export const ProductButton = styled.button`

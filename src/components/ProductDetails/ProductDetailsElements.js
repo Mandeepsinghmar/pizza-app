@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const ProductContainer = styled.div`
   min-height: 100vh;
-  max-width: 1200px;
+
   width: 100%;
   padding: 5rem;
   background: #150f0f;
@@ -45,6 +45,12 @@ export const ProductButton = styled.button`
     transition: 0.2s ease-out;
     cursor: pointer;
     color: #000;
+  }
+  @media screen and (max-width: 800px) {
+    padding: 1rem 2rem;
+  }
+  @media screen and (max-width: 600px) {
+    padding: 1rem 3rem;
   }
 `;
 export const GoHomeButton = styled.button`

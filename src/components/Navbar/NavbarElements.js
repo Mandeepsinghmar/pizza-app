@@ -59,10 +59,6 @@ export const Cart = styled(AiFillShopping)`
   font-size: 2rem;
   color: #000;
 
-  &:hover {
-    color: #e31837 !important;
-  }
-
   @media screen and (max-width: 500px) {
     display: none;
   }
@@ -71,13 +67,39 @@ export const Cart = styled(AiFillShopping)`
 export const Products = styled(BiStore)`
   font-size: 2rem;
   color: #000;
-
+  position: relative;
   &:hover {
     color: #e31837 !important;
   }
 
   @media screen and (max-width: 500px) {
     display: none;
+  }
+`;
+export const ProductQuantities = styled.span`
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 16px;
+  right: 109px;
+  width: 15px;
+  height: 15px;
+
+  border-radius: 50%;
+
+  font-size: 17px;
+  color: #e31837;
+
+  &:hover {
+    color: silver !important;
+  }
+  @media screen and (max-width: 500px) {
+    display: none;
+  }
+  @media screen and (max-width: 600px) {
+    right: 18px;
+    top: 21px;
   }
 `;
 export const Home = styled(AiFillHome)`

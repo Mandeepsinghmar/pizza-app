@@ -9,9 +9,12 @@ import {
   Products,
   Cart,
   Home,
+  ProductQuantities,
 } from "./SidebarElements";
+import { useSelector } from "react-redux";
 
 export const Sidebar = ({ toggle, isOpen }) => {
+  const { totalQuantities } = useSelector((state) => state.CartReducer);
   return (
     <SidebarContainer isOpen={isOpen}>
       <Icon onClick={toggle}>
@@ -26,6 +29,7 @@ export const Sidebar = ({ toggle, isOpen }) => {
         </SidebarLink>
         <SidebarLink to="/cart">
           <Cart />
+          <ProductQuantities>{totalQuantities}</ProductQuantities>
         </SidebarLink>
       </SidebarMenu>
     </SidebarContainer>

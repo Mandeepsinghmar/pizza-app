@@ -28,7 +28,7 @@ const ProductDetails = () => {
   const { id } = useParams();
   const dispatch = useDispatch();
   const { product } = useSelector((state) => state.ProductsReducer);
-  console.log(product);
+
   const history = useHistory();
 
   useEffect(() => {
@@ -55,8 +55,8 @@ const ProductDetails = () => {
             <div
               style={{
                 display: "flex",
-                // gap: "10px",
-                width: "200px",
+                // gap: "20px",
+                width: "150px",
                 justifyContent: "space-between",
                 alignContent: "center",
               }}
@@ -72,7 +72,7 @@ const ProductDetails = () => {
                 <span
                   style={{
                     marginLeft: "6px",
-                    fontSize: "0.9rem",
+                    fontSize: "0.8rem",
                     fontWeight: "300",
                     color: "silver",
                   }}
@@ -89,8 +89,8 @@ const ProductDetails = () => {
             <div
               style={{
                 display: "flex",
-                justifyContent: "space-evenly",
-
+                justifyContent: "center",
+                gap: "20px",
                 width: "100%",
 
                 flexWrap: "wrap",

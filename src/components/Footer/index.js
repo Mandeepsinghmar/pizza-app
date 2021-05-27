@@ -7,7 +7,6 @@ import {
   SocialLink,
   SocialMedia,
   SocialMediaWrap,
-  SocialLogo,
 } from "./FooterElements";
 
 export const Footer = () => {

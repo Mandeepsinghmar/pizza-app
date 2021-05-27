@@ -19,7 +19,7 @@ import {
   ProductDiscountPrice,
 } from "../Products/ProductsElements";
 import currencyFormat from "currency-formatter";
-import { Link } from "react-router-dom";
+
 import "../index.css";
 import { AiOutlinePlus } from "react-icons/ai";
 import { GoDash } from "react-icons/go";

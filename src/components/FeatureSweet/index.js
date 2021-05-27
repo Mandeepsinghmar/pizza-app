@@ -1,4 +1,3 @@
-import react from "react";
 import { FeatureContainer, FeatureButton } from "./FeatureElements";
 import { Link } from "react-router-dom";
 

@@ -20,8 +20,12 @@ import {
 } from "../Products/ProductsElements";
 import currencyFormat from "currency-formatter";
 import { Link } from "react-router-dom";
+import "../index.css";
 import { AiOutlinePlus } from "react-icons/ai";
 import { GoDash } from "react-icons/go";
+import SuggestedProducts from "../AllProducts/SuggestedProducts";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const ProductDetails = () => {
   const [quantity, setQuantity] = useState(1);
@@ -44,9 +48,36 @@ const ProductDetails = () => {
     }
   };
 
+  const clickHandler = () => {
+    dispatch({
+      type: "ADD_TO_CART",
+      payload: { product, quantity },
+    });
+
+    toast.dark(
+      `${product.quantity} ${product.name} has been added to your cart`,
+      {
+        className: "toast",
+      }
+    );
+  };
+
   return (
     <ProductContainer>
-      <ProductWrapper>
+      <>
+        <ToastContainer
+          position="top-right"
+          autoClose={1500}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+        />
+      </>
+      <ProductWrapper style={{ borderBottom: "4px solid silver" }}>
         <ProductCard key={product.id}>
           <ProductImg src={product.img} alt={product.alt} />
           <ProductInfo>
@@ -108,12 +139,9 @@ const ProductDetails = () => {
               </QuantityContainer>
 
               <ProductButton
-                onClick={() =>
-                  dispatch({
-                    type: "ADD_TO_CART",
-                    payload: { product, quantity },
-                  })
-                }
+                onClick={() => {
+                  clickHandler();
+                }}
               >
                 {product.button}
               </ProductButton>
@@ -131,7 +159,8 @@ const ProductDetails = () => {
           </ProductInfo>
         </ProductCard>
       </ProductWrapper>
-      <div style={{ borderTop: "1px solid #e31837" }}>
+      <SuggestedProducts />
+      <div>
         <GoHomeButton onClick={handleClick}>Go Home</GoHomeButton>
       </div>
     </ProductContainer>

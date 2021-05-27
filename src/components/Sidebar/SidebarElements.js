@@ -6,13 +6,13 @@ import { BiStore } from "react-icons/bi";
 export const SidebarContainer = styled.aside`
   position: fixed;
   z-index: 10000;
-  width: 50px;
-  height: 37%;
+  width: 90px;
+  height: 34%;
   background: #ffc500;
   display: flex;
   flex-direction: column;
-
-  gap: 30px;
+  justify-content: space-evenly;
+  // gap: 30px;
   align-items: center;
   top: 0;
   transition: 0.3s ease-in-out;
@@ -48,8 +48,8 @@ export const ProductQuantities = styled.span`
   display: flex;
   justify-content: center;
   align-items: center;
-  top: 173px;
-  right: 17px;
+  top: 163px;
+  right: 38px;
   width: 15px;
   height: 15px;
 

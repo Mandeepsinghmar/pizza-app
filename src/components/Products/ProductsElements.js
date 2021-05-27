@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const ProductsContainer = styled.div`
   min-height: 100vh;
-  padding: 5rem;
+  padding: 3rem;
   background: #150f0f;
   color: #fff;
   display: flex;
@@ -43,11 +43,14 @@ export const ProductImg = styled.img`
   }
 `;
 
-export const ProductsHeading = styled.h1`
-  font-size: clamp(2rem, 2.5vw, 3rem);
+export const ProductsHeading = styled.p`
+  font-size: 2rem;
   text-align: center;
-  margin-bottom: 5rem;
+  margin-bottom: 2rem;
   border-bottom: 4px solid #fdc500;
+  @media screen and (max-width: 700px) {
+    font-size: 1.5rem;
+  }
 `;
 
 export const ProductTitle = styled.h2`

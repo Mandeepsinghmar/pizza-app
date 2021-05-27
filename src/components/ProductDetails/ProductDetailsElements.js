@@ -4,7 +4,7 @@ export const ProductContainer = styled.div`
   min-height: 100vh;
 
   width: 100%;
-  padding: 5rem;
+  padding-top: 3rem;
   background: #150f0f;
   color: #fff;
   text-align: center;
@@ -29,6 +29,7 @@ export const ProductCard = styled.div`
 
 export const ProductWrapper = styled.div`
   margin: 0 5px;
+  padding-bottom: 20px;
 `;
 export const ProductButton = styled.button`
   font-size: 1rem;
@@ -50,7 +51,7 @@ export const ProductButton = styled.button`
     padding: 1rem 2rem;
   }
   @media screen and (max-width: 600px) {
-    padding: 1rem 3rem;
+    padding: 1rem 2rem;
   }
 `;
 export const GoHomeButton = styled.button`
@@ -62,13 +63,11 @@ export const GoHomeButton = styled.button`
   background: #ffc500;
   color: #fff;
   transition: 0.2 ease-out;
-  margin: 20px auto 0px auto;
-
+  margin: 40px auto 80px auto;
+  cursor: pointer;
   &:hover {
     background: #e31837;
     transition: 0.2s ease-out;
-    cursor: pointer;
-    color: #000;
   }
 `;
 export const QuantityContainer = styled.div`

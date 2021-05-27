@@ -1,8 +1,9 @@
 import styled from "styled-components";
 import { NavLink as Link } from "react-router-dom";
 import { MdRestaurantMenu } from "react-icons/md";
-import { AiFillShopping } from "react-icons/ai";
-import { AiFillHome } from "react-icons/ai";
+import { AiFillShopping, AiFillHome, AiFillGoogleSquare } from "react-icons/ai";
+import { FcGoogle } from "react-icons/fc";
+
 import { BiStore } from "react-icons/bi";
 
 export const Nav = styled.nav`
@@ -31,6 +32,22 @@ export const NavLink = styled(Link)`
   cursor: pointer;
   @media screen and (max-width: 600px) {
     font-size: 1.5rem;
+  }
+`;
+export const LogoutButton = styled.button`
+  width: 250px !important;
+
+  font-size: 1.1rem !important;
+  padding: 1rem 2rem;
+  border: none;
+  background: #000;
+  color: #fff;
+  transition: 0.2 ease-out;
+  // margin: 40px auto 80px auto;
+  cursor: pointer;
+  &:hover {
+    background: #e31837;
+    transition: 0.2s ease-out;
   }
 `;
 
@@ -82,7 +99,7 @@ export const ProductQuantities = styled.span`
   justify-content: center;
   align-items: center;
   top: 16px;
-  right: 109px;
+  right: 150px;
   width: 15px;
   height: 15px;
 
@@ -98,11 +115,35 @@ export const ProductQuantities = styled.span`
     display: none;
   }
   @media screen and (max-width: 600px) {
-    right: 18px;
+    right: 60px;
     top: 21px;
   }
 `;
 export const Home = styled(AiFillHome)`
+  font-size: 2rem;
+  color: #000;
+
+  &:hover {
+    color: #e31837 !important;
+  }
+
+  @media screen and (max-width: 500px) {
+    display: none;
+  }
+`;
+export const LoginWithGoogle = styled(AiFillGoogleSquare)`
+  font-size: 2rem;
+  color: #000;
+
+  &:hover {
+    color: #e31837 !important;
+  }
+
+  @media screen and (max-width: 500px) {
+    // display: none;
+  }
+`;
+export const GoogleLogo = styled(FcGoogle)`
   font-size: 2rem;
   color: #000;
 

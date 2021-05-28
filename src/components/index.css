@@ -1,0 +1,14 @@
+.toast {
+  margin-top: 50px;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.page-number {
+  /* background: #ffc500 !important; */
+  color: #fff;
+}
+.page-number:hover {
+  background: #ffc500;
+  color: #000 !important;
+}

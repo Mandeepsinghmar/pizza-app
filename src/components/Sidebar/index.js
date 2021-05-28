@@ -19,13 +19,13 @@ export const Sidebar = ({ toggle, isOpen }) => {
   return (
     <SidebarContainer isOpen={isOpen}>
       <Icon onClick={toggle}>
-        <CloseIcon data-tip="Close" />
-        <ReactTooltip place="left" type="dark" effect="solid" />
+        <CloseIcon data-tip="Close" data-for="close" />
+        <ReactTooltip place="left" id="close" type="dark" effect="solid" />
       </Icon>
       <SidebarMenu onClick={toggle}>
         <SidebarLink to="/">
-          <Home data-tip="Home" />
-          <ReactTooltip place="left" type="dark" effect="solid" />
+          <Home data-tip="Home" data-for="home" />
+          <ReactTooltip place="left" id="home" type="dark" effect="solid" />
         </SidebarLink>
         <SidebarLink to="/products">
           <Products data-tip="Products" data-for="products" />

@@ -48,7 +48,7 @@ export const ProductQuantities = styled.span`
   display: flex;
   justify-content: center;
   align-items: center;
-  top: 163px;
+  top: 218x;
   right: 38px;
   width: 15px;
   height: 15px;

@@ -8,6 +8,7 @@ import { FeatureSweet } from "../FeatureSweet";
 
 const HomePage = () => {
   const { products } = useSelector((state) => state.ProductsReducer);
+
   return (
     <div>
       {" "}

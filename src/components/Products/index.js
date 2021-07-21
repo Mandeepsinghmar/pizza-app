@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { useDispatch } from "react-redux";
 
 import {
   ProductsContainer,
@@ -11,56 +10,16 @@ import {
   ProductTitle,
   ProductDesc,
   ProductPrice,
-  ProductButton,
   ProductDiscountPrice,
 } from "./ProductsElements";
 import currencyFormat from "currency-formatter";
-import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+
 import "../index.css";
-import {
-  Quantity,
-  QuantityContainer,
-} from "../ProductDetails/ProductDetailsElements";
-import { GoDash } from "react-icons/go";
-import { AiOutlinePlus } from "react-icons/ai";
+import Quantity from "./AddToCart";
 
 export const Products = ({ data, heading }) => {
-  const [quantity, setQuantity] = useState(1);
-
-  const dispatch = useDispatch();
-
-  const decQuantity = () => {
-    if (quantity > 1) {
-      setQuantity(quantity - 1);
-    }
-  };
-  const addToCart = (product) => {
-    toast.dark(`${quantity} ${product.name} has been added to your cart`, {
-      className: "toast",
-    });
-
-    dispatch({
-      type: "ADD_TO_CART",
-      payload: { product, quantity },
-    });
-  };
-
   return (
     <ProductsContainer>
-      <>
-        <ToastContainer
-          position="top-right"
-          autoClose={1500}
-          hideProgressBar={false}
-          newestOnTop={false}
-          closeOnClick
-          rtl={false}
-          pauseOnFocusLoss
-          draggable
-          pauseOnHover
-        />
-      </>
       <ProductsHeading>{heading}</ProductsHeading>
       <ProductsWrapper>
         {data.map((product) => {
@@ -105,19 +64,7 @@ export const Products = ({ data, heading }) => {
                   </ProductDiscountPrice>
                 </div>
 
-                <QuantityContainer>
-                  <Quantity onClick={decQuantity}>
-                    <GoDash />
-                  </Quantity>
-                  <Quantity>{quantity}</Quantity>
-                  <Quantity onClick={() => setQuantity(quantity + 1)}>
-                    <AiOutlinePlus />
-                  </Quantity>
-                </QuantityContainer>
-
-                <ProductButton onClick={() => addToCart(product)}>
-                  {product.button}
-                </ProductButton>
+                <Quantity product={product} />
               </ProductInfo>
             </ProductCard>
           );

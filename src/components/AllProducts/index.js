@@ -19,55 +19,60 @@ export const AllProducts = ({ data, heading }) => {
     <ProductsContainer>
       <ProductsHeading>{heading}</ProductsHeading>
       <ProductsWrapper>
-        {data.map((product) => {
-          return (
-            <Link
-              to={`/product-details/${product.id}`}
-              style={{ textDecoration: "none", color: "white" }}
-            >
-              <ProductCard key={product.id}>
-                <ProductImg src={product.img} alt={product.alt} />
-                <ProductInfo>
-                  <AllProductTitle>{product.name}</AllProductTitle>
-                  <div
-                    style={{
-                      display: "flex",
-                      // gap: "10px",
-                      width: "200px",
-                      justifyContent: "space-between",
-                      alignContent: "center",
-                    }}
-                  >
-                    <AllProductPrice>
-                      <span style={{ textDecoration: "line-through" }}>
-                        {" "}
-                        {currencyFormat.format(product.price, {
-                          code: "USD",
-                        })}
-                      </span>
+        {data &&
+          data.map((product) => {
+            return (
+              <Link
+                to={`/product-details/${product.id}`}
+                style={{ textDecoration: "none", color: "white" }}
+                key={product.id}
+              >
+                <ProductCard>
+                  <ProductImg src={product.img} alt={product.alt} />
+                  <ProductInfo>
+                    <AllProductTitle>{product.name}</AllProductTitle>
+                    <div
+                      style={{
+                        display: "flex",
+                        // gap: "10px",
+                        width: "200px",
+                        justifyContent: "space-between",
+                        alignContent: "center",
+                      }}
+                    >
+                      <AllProductPrice>
+                        <span style={{ textDecoration: "line-through" }}>
+                          {" "}
+                          {currencyFormat.format(product.price, {
+                            code: "USD",
+                          })}
+                        </span>
 
-                      <span
-                        style={{
-                          marginLeft: "6px",
-                          fontSize: "0.8rem",
-                          fontWeight: "300",
-                          color: "silver",
-                        }}
-                      >
-                        ({product.discount}%)
-                      </span>
-                    </AllProductPrice>
-                    <AllProductDiscountPrice>
-                      {currencyFormat.format(product.discountPrice.toFixed(2), {
-                        code: "USD",
-                      })}
-                    </AllProductDiscountPrice>
-                  </div>
-                </ProductInfo>
-              </ProductCard>
-            </Link>
-          );
-        })}
+                        <span
+                          style={{
+                            marginLeft: "6px",
+                            fontSize: "0.8rem",
+                            fontWeight: "300",
+                            color: "silver",
+                          }}
+                        >
+                          ({product.discount}%)
+                        </span>
+                      </AllProductPrice>
+                      <AllProductDiscountPrice>
+                        {currencyFormat.format(
+                          product.discountPrice.toFixed(2),
+                          {
+                            code: "USD",
+                          }
+                        )}
+                      </AllProductDiscountPrice>
+                    </div>
+                  </ProductInfo>
+                </ProductCard>
+              </Link>
+            );
+          })}
       </ProductsWrapper>
     </ProductsContainer>
   );

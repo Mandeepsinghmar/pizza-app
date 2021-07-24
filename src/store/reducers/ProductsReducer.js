@@ -370,7 +370,7 @@ const initialState = {
       discount: 4,
       discountPrice: 19.99 - (4 / 100) * 19.99,
       quantity: 10,
-      id: 1,
+      id: 30,
     },
     {
       img: product2,
@@ -382,7 +382,7 @@ const initialState = {
       discount: 7,
       discountPrice: 16.99 - (7 / 100) * 16.99,
       quantity: 10,
-      id: 2,
+      id: 31,
     },
     {
       img: product3,
@@ -394,7 +394,7 @@ const initialState = {
       discount: 10,
       discountPrice: 14.99 - (10 / 100) * 14.99,
       quantity: 10,
-      id: 3,
+      id: 32,
     },
     {
       img: sweet2,
@@ -406,7 +406,7 @@ const initialState = {
       discount: 10,
       discountPrice: 9.99 - (10 / 100) * 9.99,
       quantity: 10,
-      id: 4,
+      id: 33,
     },
     {
       img: sweet3,
@@ -418,7 +418,7 @@ const initialState = {
       discount: 10,
       discountPrice: 12.99 - (10 / 100) * 12.99,
       quantity: 10,
-      id: 5,
+      id: 34,
     },
     {
       img: sweet1,
@@ -430,7 +430,7 @@ const initialState = {
       discount: 10,
       discountPrice: 9.99 - (10 / 100) * 9.99,
       quantity: 10,
-      id: 6,
+      id: 35,
     },
     {
       img: sweet4,
@@ -442,7 +442,7 @@ const initialState = {
       discount: 10,
       discountPrice: 9.99 - (10 / 100) * 9.99,
       quantity: 10,
-      id: 7,
+      id: 36,
     },
     {
       img: sweet5,
@@ -454,7 +454,7 @@ const initialState = {
       discount: 10,
       discountPrice: 12.99 - (10 / 100) * 12.99,
       quantity: 10,
-      id: 8,
+      id: 37,
     },
     {
       img: sweet6,
@@ -466,7 +466,7 @@ const initialState = {
       discount: 10,
       discountPrice: 9.99 - (10 / 100) * 9.99,
       quantity: 10,
-      id: 9,
+      id: 38,
     },
     {
       img: product1,
@@ -478,7 +478,7 @@ const initialState = {
       discount: 11,
       discountPrice: 19.99 - (11 / 100) * 19.99,
       quantity: 10,
-      id: 10,
+      id: 39,
     },
     {
       img: product2,
@@ -490,7 +490,7 @@ const initialState = {
       discount: 12,
       discountPrice: 16.99 - (12 / 100) * 16.99,
       quantity: 10,
-      id: 11,
+      id: 40,
     },
     {
       img: product3,
@@ -502,7 +502,7 @@ const initialState = {
       discount: 13,
       discountPrice: 14.99 - (13 / 100) * 14.99,
       quantity: 10,
-      id: 12,
+      id: 41,
     },
     {
       img: sweet2,
@@ -514,7 +514,7 @@ const initialState = {
       discount: 14,
       discountPrice: 9.99 - (14 / 100) * 9.99,
       quantity: 10,
-      id: 13,
+      id: 42,
     },
     {
       img: sweet3,
@@ -526,7 +526,7 @@ const initialState = {
       discount: 20,
       discountPrice: 12.99 - (20 / 100) * 12.99,
       quantity: 10,
-      id: 14,
+      id: 43,
     },
     {
       img: sweet1,
@@ -538,7 +538,7 @@ const initialState = {
       discount: 20,
       discountPrice: 9.99 - (20 / 100) * 9.99,
       quantity: 10,
-      id: 15,
+      id: 44,
     },
     {
       img: sweet4,
@@ -550,7 +550,7 @@ const initialState = {
       discount: 22,
       discountPrice: 9.99 - (22 / 100) * 9.99,
       quantity: 10,
-      id: 16,
+      id: 45,
     },
     {
       img: sweet5,
@@ -562,7 +562,7 @@ const initialState = {
       discount: 21,
       discountPrice: 12.99 - (21 / 100) * 12.99,
       quantity: 10,
-      id: 17,
+      id: 46,
     },
     {
       img: sweet6,
@@ -574,7 +574,7 @@ const initialState = {
       discount: 22,
       discountPrice: 9.99 - (22 / 100) * 9.99,
       quantity: 10,
-      id: 18,
+      id: 47,
     },
     {
       img: product1,
@@ -586,7 +586,7 @@ const initialState = {
       discount: 11,
       discountPrice: 19.99 - (11 / 100) * 19.99,
       quantity: 10,
-      id: 19,
+      id: 48,
     },
     {
       img: product2,
@@ -598,7 +598,7 @@ const initialState = {
       discount: 22,
       discountPrice: 16.99 - (22 / 100) * 16.99,
       quantity: 10,
-      id: 20,
+      id: 49,
     },
     {
       img: product3,
@@ -610,7 +610,7 @@ const initialState = {
       discount: 22,
       discountPrice: 14.99 - (22 / 100) * 14.99,
       quantity: 10,
-      id: 21,
+      id: 50,
     },
     {
       img: sweet2,
@@ -622,7 +622,7 @@ const initialState = {
       discount: 23,
       discountPrice: 9.99 - (23 / 100) * 9.99,
       quantity: 10,
-      id: 22,
+      id: 51,
     },
     {
       img: sweet3,
@@ -634,7 +634,7 @@ const initialState = {
       discount: 25,
       discountPrice: 12.99 - (25 / 100) * 12.99,
       quantity: 10,
-      id: 23,
+      id: 52,
     },
     {
       img: sweet1,
@@ -646,7 +646,7 @@ const initialState = {
       discount: 25,
       discountPrice: 9.99 - (25 / 100) * 9.99,
       quantity: 10,
-      id: 24,
+      id: 53,
     },
     {
       img: sweet4,
@@ -658,7 +658,7 @@ const initialState = {
       discount: 25,
       discountPrice: 9.99 - (25 / 100) * 9.99,
       quantity: 10,
-      id: 25,
+      id: 54,
     },
     {
       img: sweet5,
@@ -670,7 +670,7 @@ const initialState = {
       discount: 25,
       discountPrice: 12.99 - (25 / 100) * 12.99,
       quantity: 10,
-      id: 26,
+      id: 55,
     },
     {
       img: sweet6,
@@ -682,7 +682,7 @@ const initialState = {
       discount: 25,
       discountPrice: 9.99 - (25 / 100) * 9.99,
       quantity: 10,
-      id: 27,
+      id: 56,
     },
     {
       img: featurePizza,
@@ -694,7 +694,7 @@ const initialState = {
       discount: 24,
       discountPrice: 19.99 - (24 / 100) * 19.99,
       quantity: 10,
-      id: 28,
+      id: 57,
     },
     {
       img: featureSweet,
@@ -706,7 +706,7 @@ const initialState = {
       discount: 20,
       discountPrice: 9.99 - (20 / 100) * 9.99,
       quantity: 10,
-      id: 29,
+      id: 58,
     },
     {
       img: product1,
@@ -718,7 +718,7 @@ const initialState = {
       discount: 4,
       discountPrice: 19.99 - (4 / 100) * 19.99,
       quantity: 10,
-      id: 1,
+      id: 59,
     },
     {
       img: product2,
@@ -730,7 +730,7 @@ const initialState = {
       discount: 7,
       discountPrice: 16.99 - (7 / 100) * 16.99,
       quantity: 10,
-      id: 2,
+      id: 60,
     },
     {
       img: product3,
@@ -742,7 +742,7 @@ const initialState = {
       discount: 10,
       discountPrice: 14.99 - (10 / 100) * 14.99,
       quantity: 10,
-      id: 3,
+      id: 61,
     },
     {
       img: sweet2,
@@ -754,7 +754,7 @@ const initialState = {
       discount: 10,
       discountPrice: 9.99 - (10 / 100) * 9.99,
       quantity: 10,
-      id: 4,
+      id: 62,
     },
     {
       img: sweet3,
@@ -766,7 +766,7 @@ const initialState = {
       discount: 10,
       discountPrice: 12.99 - (10 / 100) * 12.99,
       quantity: 10,
-      id: 5,
+      id: 63,
     },
     {
       img: sweet1,
@@ -778,7 +778,7 @@ const initialState = {
       discount: 10,
       discountPrice: 9.99 - (10 / 100) * 9.99,
       quantity: 10,
-      id: 6,
+      id: 64,
     },
     {
       img: sweet4,
@@ -790,7 +790,7 @@ const initialState = {
       discount: 10,
       discountPrice: 9.99 - (10 / 100) * 9.99,
       quantity: 10,
-      id: 7,
+      id: 65,
     },
     {
       img: sweet5,
@@ -802,7 +802,7 @@ const initialState = {
       discount: 10,
       discountPrice: 12.99 - (10 / 100) * 12.99,
       quantity: 10,
-      id: 8,
+      id: 66,
     },
     {
       img: sweet6,
@@ -814,7 +814,7 @@ const initialState = {
       discount: 10,
       discountPrice: 9.99 - (10 / 100) * 9.99,
       quantity: 10,
-      id: 9,
+      id: 67,
     },
     {
       img: product1,
@@ -826,7 +826,7 @@ const initialState = {
       discount: 11,
       discountPrice: 19.99 - (11 / 100) * 19.99,
       quantity: 10,
-      id: 10,
+      id: 68,
     },
     {
       img: product2,
@@ -838,7 +838,7 @@ const initialState = {
       discount: 12,
       discountPrice: 16.99 - (12 / 100) * 16.99,
       quantity: 10,
-      id: 11,
+      id: 69,
     },
     {
       img: product3,
@@ -850,7 +850,7 @@ const initialState = {
       discount: 13,
       discountPrice: 14.99 - (13 / 100) * 14.99,
       quantity: 10,
-      id: 12,
+      id: 70,
     },
     {
       img: sweet2,
@@ -862,7 +862,7 @@ const initialState = {
       discount: 14,
       discountPrice: 9.99 - (14 / 100) * 9.99,
       quantity: 10,
-      id: 13,
+      id: 71,
     },
     {
       img: sweet3,
@@ -874,7 +874,7 @@ const initialState = {
       discount: 20,
       discountPrice: 12.99 - (20 / 100) * 12.99,
       quantity: 10,
-      id: 14,
+      id: 72,
     },
     {
       img: sweet1,
@@ -886,7 +886,7 @@ const initialState = {
       discount: 20,
       discountPrice: 9.99 - (20 / 100) * 9.99,
       quantity: 10,
-      id: 15,
+      id: 73,
     },
     {
       img: sweet4,
@@ -898,7 +898,7 @@ const initialState = {
       discount: 22,
       discountPrice: 9.99 - (22 / 100) * 9.99,
       quantity: 10,
-      id: 16,
+      id: 74,
     },
     {
       img: sweet5,
@@ -910,7 +910,7 @@ const initialState = {
       discount: 21,
       discountPrice: 12.99 - (21 / 100) * 12.99,
       quantity: 10,
-      id: 17,
+      id: 75,
     },
     {
       img: sweet6,
@@ -922,7 +922,7 @@ const initialState = {
       discount: 22,
       discountPrice: 9.99 - (22 / 100) * 9.99,
       quantity: 10,
-      id: 18,
+      id: 76,
     },
     {
       img: product1,
@@ -934,7 +934,7 @@ const initialState = {
       discount: 11,
       discountPrice: 19.99 - (11 / 100) * 19.99,
       quantity: 10,
-      id: 19,
+      id: 77,
     },
     {
       img: product2,
@@ -946,7 +946,7 @@ const initialState = {
       discount: 22,
       discountPrice: 16.99 - (22 / 100) * 16.99,
       quantity: 10,
-      id: 20,
+      id: 78,
     },
     {
       img: product3,
@@ -958,7 +958,7 @@ const initialState = {
       discount: 22,
       discountPrice: 14.99 - (22 / 100) * 14.99,
       quantity: 10,
-      id: 21,
+      id: 79,
     },
     {
       img: sweet2,
@@ -970,7 +970,7 @@ const initialState = {
       discount: 23,
       discountPrice: 9.99 - (23 / 100) * 9.99,
       quantity: 10,
-      id: 22,
+      id: 80,
     },
     {
       img: sweet3,
@@ -982,7 +982,7 @@ const initialState = {
       discount: 25,
       discountPrice: 12.99 - (25 / 100) * 12.99,
       quantity: 10,
-      id: 23,
+      id: 81,
     },
     {
       img: sweet1,
@@ -994,7 +994,7 @@ const initialState = {
       discount: 25,
       discountPrice: 9.99 - (25 / 100) * 9.99,
       quantity: 10,
-      id: 24,
+      id: 82,
     },
     {
       img: sweet4,
@@ -1006,7 +1006,7 @@ const initialState = {
       discount: 25,
       discountPrice: 9.99 - (25 / 100) * 9.99,
       quantity: 10,
-      id: 25,
+      id: 83,
     },
     {
       img: sweet5,
@@ -1018,7 +1018,7 @@ const initialState = {
       discount: 25,
       discountPrice: 12.99 - (25 / 100) * 12.99,
       quantity: 10,
-      id: 26,
+      id: 84,
     },
     {
       img: sweet6,
@@ -1030,7 +1030,7 @@ const initialState = {
       discount: 25,
       discountPrice: 9.99 - (25 / 100) * 9.99,
       quantity: 10,
-      id: 27,
+      id: 85,
     },
     {
       img: featurePizza,
@@ -1042,7 +1042,7 @@ const initialState = {
       discount: 24,
       discountPrice: 19.99 - (24 / 100) * 19.99,
       quantity: 10,
-      id: 28,
+      id: 86,
     },
     {
       img: featureSweet,
@@ -1054,7 +1054,7 @@ const initialState = {
       discount: 20,
       discountPrice: 9.99 - (20 / 100) * 9.99,
       quantity: 10,
-      id: 29,
+      id: 87,
     },
   ],
   product: {},

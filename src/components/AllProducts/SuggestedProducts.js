@@ -1,14 +1,24 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { AllProducts } from "./index";
 import { useSelector } from "react-redux";
-const SuggestedProducts = () => {
+const SuggestedProducts = ({ productId }) => {
   const { products } = useSelector((state) => state.ProductsReducer);
+  const [data, setData] = useState();
+
+  let productsData;
+  useEffect(() => {
+    productsData = products.sort(() => 0.5 - Math.random()).slice(0, 6);
+    setData(productsData);
+  }, [productId]);
+
   return (
-    <AllProducts
-      style={{ borderBottom: "1px solid #e31837 !important" }}
-      heading="You may also like"
-      data={products.sort(() => 0.5 - Math.random()).slice(0, 6)}
-    />
+    <>
+      <AllProducts
+        style={{ borderBottom: "1px solid #e31837 !important" }}
+        heading="You may also like"
+        data={data}
+      />
+    </>
   );
 };
 

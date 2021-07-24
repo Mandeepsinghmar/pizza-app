@@ -1,8 +1,8 @@
 export const firebaseConfig = {
-  apiKey: "AIzaSyD-4uPc2RdcRHqyTJvOv7DaHDqZuyF0SNU",
-  authDomain: "react-redux-ecom-project.firebaseapp.com",
-  projectId: "react-redux-ecom-project",
-  storageBucket: "react-redux-ecom-project.appspot.com",
-  messagingSenderId: "719000776465",
-  appId: "1:719000776465:web:8333b386580219a12b66b0",
+  apiKey: process.env.REACT_APP_API_KEY,
+  authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_APP_ID,
 };

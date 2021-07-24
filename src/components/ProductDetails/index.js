@@ -159,7 +159,7 @@ const ProductDetails = () => {
           </ProductInfo>
         </ProductCard>
       </ProductWrapper>
-      <SuggestedProducts />
+      <SuggestedProducts productId={product.id} />
       <div>
         <GoHomeButton onClick={handleClick}>Go Home</GoHomeButton>
       </div>

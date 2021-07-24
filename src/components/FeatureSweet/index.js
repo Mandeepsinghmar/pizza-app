@@ -9,6 +9,7 @@ export const FeatureSweet = () => {
       <Link to="/product-details/29">
         <FeatureButton>Order Now</FeatureButton>
       </Link>
+      {console.log(process.env.NODE_ENV)}
     </FeatureContainer>
   );
 };

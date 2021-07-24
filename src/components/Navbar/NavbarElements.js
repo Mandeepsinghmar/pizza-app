@@ -10,7 +10,7 @@ export const Nav = styled.nav`
   background: #ffc500;
   display: flex;
   justify-content: space-between;
-  padding: 0px 100px;
+  padding: 10px 100px;
   font-weight: 700;
 
   position: sticky;
@@ -98,7 +98,7 @@ export const ProductQuantities = styled.span`
   display: flex;
   justify-content: center;
   align-items: center;
-  top: 16px;
+  top: 26px;
   right: 150px;
   width: 15px;
   height: 15px;

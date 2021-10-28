@@ -13,7 +13,7 @@ import {
   ProductDiscountPrice,
 } from "./ProductsElements";
 import currencyFormat from "currency-formatter";
-import { ToastContainer, toast } from "react-toastify";
+import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "../index.css";
 

@@ -33,7 +33,7 @@ const Navbar = () => {
       dispatch({ type: "USER", payload: user });
     }
     // return () => {};
-  }, []);
+  }, [dispatch]);
 
   const toggle = () => {
     setIsOpen(!isOpen);

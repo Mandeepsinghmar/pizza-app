@@ -9,7 +9,6 @@ const MixedProducts = () => {
   const shuffledProducts = products
     .sort(() => 0.5 - Math.random())
     .slice(0, 100);
-  console.log(shuffledProducts);
 
   //get current products
   const indexOfLastProduct = currentPage * productsPerPage;
@@ -18,7 +17,6 @@ const MixedProducts = () => {
     indexOfFirstProduct,
     indexOfLastProduct
   );
-  console.log(currentProducts);
   const paginate = (pageNumber) => {
     setCurrentPage(pageNumber);
     window.scrollTo(0, 0);

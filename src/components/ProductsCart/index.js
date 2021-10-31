@@ -21,8 +21,9 @@ import {
   CheckoutCart,
   AddProductsButton,
 } from "./ProdctsCartElements";
+import StripeCheckoutButton from "../StripeCheckoutButton";
 
-import { ToastContainer, toast } from "react-toastify";
+import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 import { AiOutlinePlus } from "react-icons/ai";
@@ -32,26 +33,12 @@ import { RiChatDeleteFill } from "react-icons/ri";
 import currencyFormat from "currency-formatter";
 import { Link } from "react-router-dom";
 import "../index.css";
+
 const ProductsCart = () => {
   const dispatch = useDispatch();
   const { products, totalPrice, totalQuantities } = useSelector(
     (state) => state.CartReducer
   );
-
-  const user = useSelector((state) => state.UserReducer);
-
-  const Checkout = () => {
-    if (user) {
-      toast.dark("Thank you! Your order was successfully submitted!", {
-        className: "toast",
-      });
-      dispatch({ type: "CHECKOUT" });
-    } else {
-      toast.dark("You must be logged in to checkout!", {
-        className: "toast",
-      });
-    }
-  };
 
   return (
     <Cart>
@@ -83,7 +70,10 @@ const ProductsCart = () => {
                   <CartHeadingTitle>Remove</CartHeadingTitle>
                 </CartHeading>
                 {products.map((product) => (
-                  <CartItemsConatiner style={{ background: "none" }}>
+                  <CartItemsConatiner
+                    key={product.id}
+                    style={{ background: "none" }}
+                  >
                     <CartItemsDesc>
                       <CartProductImgContainer>
                         <img
@@ -160,9 +150,11 @@ const ProductsCart = () => {
                         {currencyFormat.format(totalPrice, { code: "USD" })}
                       </SummaryDesc>
                     </SummaryDetails>
-                    <CheckoutCart onClick={() => Checkout()}>
-                      Checkout
-                    </CheckoutCart>
+                    <StripeCheckoutButton
+                      price={currencyFormat.format(totalPrice, { code: "USD" })}
+                    >
+                      <CheckoutCart>Checkout</CheckoutCart>
+                    </StripeCheckoutButton>
                   </SummaryDetailsContainer>
                 </Summary>
               </SummaryContainer>

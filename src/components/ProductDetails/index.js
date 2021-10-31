@@ -37,7 +37,7 @@ const ProductDetails = () => {
 
   useEffect(() => {
     dispatch({ type: "PRODUCT", id });
-  }, [id]);
+  }, [id, dispatch]);
 
   const handleClick = () => {
     history.push("/");

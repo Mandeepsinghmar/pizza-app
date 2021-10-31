@@ -5,11 +5,10 @@ const SuggestedProducts = ({ productId }) => {
   const { products } = useSelector((state) => state.ProductsReducer);
   const [data, setData] = useState();
 
-  let productsData;
   useEffect(() => {
-    productsData = products.sort(() => 0.5 - Math.random()).slice(0, 6);
+    let productsData = products.sort(() => 0.5 - Math.random()).slice(0, 6);
     setData(productsData);
-  }, [productId]);
+  }, [productId, products]);
 
   return (
     <>
